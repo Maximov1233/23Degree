@@ -4,6 +4,7 @@ $main-color: #19b5fe;
 $input-color: #606060;
 $text-color: #464646;
 $features-color: #3f3f3f;
+$section-color: #363636;
 
 * {
     margin: 0;
@@ -35,7 +36,7 @@ html {
 
 @media (min-width:1200px) {
     .container {
-        max-width: 86.97916666666667%;
+        max-width: 90%;
     }
 
 }
@@ -50,6 +51,30 @@ body {
         margin-right: auto;
         margin-left: auto;
 
+    }
+
+    section {
+        padding: 2rem 0;
+    }
+    .button {
+        font-size: 1.143rem;
+        background: $main-color;
+        border: none;
+        color: $white;
+        padding: 1rem 3rem;
+        border-radius: 35px;
+        font-family: 'Roboto Medium';
+    }
+    .section-title {
+        font-family: 'Roboto Thin';
+        font-size: 2.5rem;
+        color: $section-color;
+        border-bottom: 1px solid $main-color;
+        padding-bottom: 1rem;
+        text-align: center;
+        width: 25%;
+        margin: auto;
+        margin-bottom: 3rem;
     }
 
     .header {
@@ -161,13 +186,6 @@ body {
                         }
                     }
                     .form-button {
-                        font-size: 1.143rem;
-                        background: $main-color;
-                        border: none;
-                        color: $white;
-                        padding: 1rem 3rem;
-                        border-radius: 35px;
-                        font-family: 'Roboto Medium';
                         display: block;
                         margin: auto;
                         transform: translateY(50%);
@@ -196,5 +214,45 @@ body {
                 opacity: 1;
             }
         }      
+    }
+
+    main {
+        .services {
+            color: $text-color;
+            .container {
+                .services-list {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    
+                    .service {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 2rem;
+                        padding: 0 16%;
+                        &-text {
+                            text-align: left;
+                            margin-right: 2rem;
+                            font-size: 1.2rem;
+                            h4 {
+                                color: $main-color;
+                                font-size: 2rem;
+                                margin-bottom: 0.5rem;
+                            }
+                            p {
+                                font-weight: 300;
+                                margin-bottom: 1rem;
+                            }
+                        }
+                        &:nth-child(2) {
+                            .service-text {
+                                margin: 0 0 0 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

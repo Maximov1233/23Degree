@@ -29,7 +29,7 @@ html {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 86.97916666666667%;
+    max-width: 90%;
   }
 }
 
@@ -43,6 +43,32 @@ body .container {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+body section {
+  padding: 2rem 0;
+}
+
+body .button {
+  font-size: 1.143rem;
+  background: #19b5fe;
+  border: none;
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 35px;
+  font-family: 'Roboto Medium';
+}
+
+body .section-title {
+  font-family: 'Roboto Thin';
+  font-size: 2.5rem;
+  color: #363636;
+  border-bottom: 1px solid #19b5fe;
+  padding-bottom: 1rem;
+  text-align: center;
+  width: 25%;
+  margin: auto;
+  margin-bottom: 3rem;
 }
 
 body .header {
@@ -186,13 +212,6 @@ body .header .container .header-content .header-form .form-input:nth-child(2) {
 }
 
 body .header .container .header-content .header-form .form-button {
-  font-size: 1.143rem;
-  background: #19b5fe;
-  border: none;
-  color: #fff;
-  padding: 1rem 3rem;
-  border-radius: 35px;
-  font-family: 'Roboto Medium';
   display: block;
   margin: auto;
   -webkit-transform: translateY(50%);
@@ -234,5 +253,57 @@ body .header .container .header-content .header-scroll {
   100% {
     opacity: 1;
   }
+}
+
+body main .services {
+  color: #464646;
+}
+
+body main .services .container .services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .services .container .services-list .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 16%;
+}
+
+body main .services .container .services-list .service-text {
+  text-align: left;
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+
+body main .services .container .services-list .service-text h4 {
+  color: #19b5fe;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+body main .services .container .services-list .service-text p {
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+body main .services .container .services-list .service:nth-child(2) .service-text {
+  margin: 0 0 0 2rem;
 }
 /*# sourceMappingURL=main.css.map */
