@@ -73,6 +73,8 @@ body {
         list-style: none;
     }
 
+    }
+
     .section-title {
         font-family: 'Roboto Thin';
         font-size: 2.5rem;
@@ -510,4 +512,43 @@ body {
             }
         }
     }
-}
+
+    main {
+        .services {
+            color: $text-color;
+            .container {
+                .services-list {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    
+                    .service {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 2rem;
+                        padding: 0 16%;
+                        &-text {
+                            text-align: left;
+                            margin-right: 2rem;
+                            font-size: 1.2rem;
+                            h4 {
+                                color: $main-color;
+                                font-size: 2rem;
+                                margin-bottom: 0.5rem;
+                            }
+                            p {
+                                font-weight: 300;
+                                margin-bottom: 1rem;
+                            }
+                        }
+                        &:nth-child(2) {
+                            .service-text {
+                                margin: 0 0 0 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

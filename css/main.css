@@ -65,7 +65,7 @@ body ul {
   list-style: none;
 }
 
-body .section-title {
+.section-title {
   font-family: 'Roboto Thin';
   font-size: 2.5rem;
   color: #363636;
@@ -77,19 +77,19 @@ body .section-title {
   margin-bottom: 3rem;
 }
 
-body a {
+a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
 }
 
-body .header {
+.header {
   background: url(../img/header-bg.jpg) no-repeat center;
   padding: 3rem 0;
   color: #fff;
 }
 
-body .header .container .header-top {
+.header .container .header-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,28 +102,28 @@ body .header .container .header-top {
   margin-bottom: 3rem;
 }
 
-body .header .container .header-top .header-logo {
+.header .container .header-top .header-logo {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
 }
 
-body .header .container .header-top .header-phone {
+.header .container .header-top .header-phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .header .container .header-top .header-phone p {
+.header .container .header-top .header-phone p {
   font-size: 1.2rem;
   font-weight: 300;
   margin-left: 0.5rem;
 }
 
-body .header .container .header-top .header-phone p strong {
+.header .container .header-top .header-phone p strong {
   font-weight: 500;
 }
 
-body .header .container .header-top .header-hamburger {
+.header .container .header-top .header-hamburger {
   width: 40px;
   height: 20px;
   position: relative;
@@ -134,33 +134,33 @@ body .header .container .header-top .header-hamburger {
   cursor: pointer;
 }
 
-body .header .container .header-top .header-hamburger .text {
+.header .container .header-top .header-hamburger .text {
   margin-top: 1.7rem;
 }
 
-body .header .container .header-top .header-hamburger.open span:nth-child(1) {
+.header .container .header-top .header-hamburger.open span:nth-child(1) {
   top: 18px;
   width: 0%;
   left: 50%;
 }
 
-body .header .container .header-top .header-hamburger.open span:nth-child(2) {
+.header .container .header-top .header-hamburger.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-body .header .container .header-top .header-hamburger.open span:nth-child(3) {
+.header .container .header-top .header-hamburger.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-body .header .container .header-top .header-hamburger.open span:nth-child(4) {
+.header .container .header-top .header-hamburger.open span:nth-child(4) {
   top: 18px;
   width: 0%;
   left: 50%;
 }
 
-body .header .container .header-top .header-hamburger span {
+.header .container .header-top .header-hamburger span {
   display: block;
   position: absolute;
   height: 4px;
@@ -175,39 +175,39 @@ body .header .container .header-top .header-hamburger span {
   transition: .25s ease-in-out;
 }
 
-body .header .container .header-top .header-hamburger span:nth-child(1) {
+.header .container .header-top .header-hamburger span:nth-child(1) {
   top: 0px;
 }
 
-body .header .container .header-top .header-hamburger span:nth-child(2), body .header .container .header-top .header-hamburger span:nth-child(3) {
+.header .container .header-top .header-hamburger span:nth-child(2), .header .container .header-top .header-hamburger span:nth-child(3) {
   top: 9px;
 }
 
-body .header .container .header-top .header-hamburger span:nth-child(4) {
+.header .container .header-top .header-hamburger span:nth-child(4) {
   top: 18px;
 }
 
-body .header .container .header-content {
+.header .container .header-content {
   text-align: center;
 }
 
-body .header .container .header-content .header-title {
+.header .container .header-content .header-title {
   font-size: 3.429rem;
   margin-bottom: 2rem;
 }
 
-body .header .container .header-content .header-subtitle {
+.header .container .header-content .header-subtitle {
   font-size: 1.571rem;
   font-weight: 300;
   margin-bottom: 3rem;
 }
 
-body .header .container .header-content .header-form form {
+.header .container .header-content .header-form form {
   border: 1px solid #fff;
   margin: 0 15% 3rem;
 }
 
-body .header .container .header-content .header-form .form-input {
+.header .container .header-content .header-form .form-input {
   border: none;
   padding: 1rem 7rem 1rem 2rem;
   border-radius: 35px;
@@ -218,25 +218,25 @@ body .header .container .header-content .header-form .form-input {
           transform: translateY(-50%);
 }
 
-body .header .container .header-content .header-form .form-input:nth-child(2) {
+.header .container .header-content .header-form .form-input:nth-child(2) {
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
-body .header .container .header-content .header-form .form-button {
+.header .container .header-content .header-form .form-button {
   display: block;
   margin: auto;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
 }
 
-body .header .container .header-content .header-policy {
+.header .container .header-content .header-policy {
   font-size: 1rem;
   font-family: 'Roboto Thin';
   margin-bottom: 3rem;
 }
 
-body .header .container .header-content .header-scroll {
+.header .container .header-content .header-scroll {
   -webkit-animation: opacity 3s infinite ease;
           animation: opacity 3s infinite ease;
   -webkit-animation-direction: initial;
@@ -267,11 +267,11 @@ body .header .container .header-content .header-scroll {
   }
 }
 
-body main .services {
+main .services {
   color: #464646;
 }
 
-body main .services .container .services-list {
+main .services .container .services-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,7 +287,7 @@ body main .services .container .services-list {
           flex-direction: column;
 }
 
-body main .services .container .services-list .service {
+main .services .container .services-list .service {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,33 +298,33 @@ body main .services .container .services-list .service {
   padding: 0 16%;
 }
 
-body main .services .container .services-list .service-text {
+main .services .container .services-list .service-text {
   text-align: left;
   margin-right: 2rem;
   font-size: 1.2rem;
 }
 
-body main .services .container .services-list .service-text h4 {
+main .services .container .services-list .service-text h4 {
   color: #19b5fe;
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
-body main .services .container .services-list .service-text p {
+main .services .container .services-list .service-text p {
   font-weight: 300;
   margin-bottom: 1rem;
 }
 
-body main .services .container .services-list .service:nth-child(2) .service-text {
+main .services .container .services-list .service:nth-child(2) .service-text {
   margin: 0 0 0 2rem;
 }
 
-body main .rates {
+main .rates {
   background: url(../img/rates/bg.jpg) no-repeat center top;
   color: #fff;
 }
 
-body main .rates .container {
+main .rates .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,19 +340,19 @@ body main .rates .container {
           align-items: center;
 }
 
-body main .rates .container .section-title {
+main .rates .container .section-title {
   color: #fff;
   border-bottom-color: #fff;
   margin-bottom: 1rem;
 }
 
-body main .rates .container .section-subtitle {
+main .rates .container .section-subtitle {
   font-size: 1.6rem;
   font-weight: 300;
   margin-bottom: 5rem;
 }
 
-body main .rates .container .price-choosing {
+main .rates .container .price-choosing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,24 +361,24 @@ body main .rates .container .price-choosing {
           justify-content: space-between;
 }
 
-body main .rates .container .price-choosing .calculator p {
+main .rates .container .price-choosing .calculator p {
   font-size: 1.429rem;
   font-weight: 400;
   margin-bottom: 2rem;
 }
 
-body main .rates .container .price-choosing .calculator .area-range,
-body main .rates .container .price-choosing .calculator .set-range {
+main .rates .container .price-choosing .calculator .area-range,
+main .rates .container .price-choosing .calculator .set-range {
   border: 1px solid #fff;
   padding: 1rem 2rem;
   border-radius: 5px;
 }
 
-body main .rates .container .price-choosing .calculator .area-range {
+main .rates .container .price-choosing .calculator .area-range {
   margin-bottom: 1rem;
 }
 
-body main .rates .container .price-choosing .calculator .area-range .labels {
+main .rates .container .price-choosing .calculator .area-range .labels {
   font-size: 1.143rem;
   font-weight: 300;
   margin-bottom: 1rem;
@@ -390,24 +390,24 @@ body main .rates .container .price-choosing .calculator .area-range .labels {
           justify-content: space-between;
 }
 
-body main .rates .container .price-choosing .calculator .area-range .labels label {
+main .rates .container .price-choosing .calculator .area-range .labels label {
   min-width: 93px;
   text-align: right;
 }
 
-body main .rates .container .price-choosing .calculator .area-range .labels label:first-child, body main .rates .container .price-choosing .calculator .area-range .labels label:last-child {
+main .rates .container .price-choosing .calculator .area-range .labels label:first-child, main .rates .container .price-choosing .calculator .area-range .labels label:last-child {
   text-align: unset;
 }
 
-body main .rates .container .price-choosing .calculator .area-range .labels label:nth-child(2) {
+main .rates .container .price-choosing .calculator .area-range .labels label:nth-child(2) {
   text-align: unset;
 }
 
-body main .rates .container .price-choosing .calculator .area-range .labels label:last-child {
+main .rates .container .price-choosing .calculator .area-range .labels label:last-child {
   text-align: right;
 }
 
-body main .rates .container .price-choosing .calculator .area-range .area-input {
+main .rates .container .price-choosing .calculator .area-range .area-input {
   -webkit-appearance: none;
   width: 43rem;
   height: 0.6rem;
@@ -419,7 +419,7 @@ body main .rates .container .price-choosing .calculator .area-range .area-input 
   transition: opacity .2s;
 }
 
-body main .rates .container .price-choosing .calculator .area-range .area-input::-webkit-slider-thumb {
+main .rates .container .price-choosing .calculator .area-range .area-input::-webkit-slider-thumb {
   -webkit-appearance: none;
           appearance: none;
   width: 20px;
@@ -429,7 +429,7 @@ body main .rates .container .price-choosing .calculator .area-range .area-input:
   cursor: pointer;
 }
 
-body main .rates .container .price-choosing .calculator .set-range__options {
+main .rates .container .price-choosing .calculator .set-range__options {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,7 +438,7 @@ body main .rates .container .price-choosing .calculator .set-range__options {
           justify-content: space-between;
 }
 
-body main .rates .container .price-choosing .calculator .set-range__options .set-button {
+main .rates .container .price-choosing .calculator .set-range__options .set-button {
   padding: 1rem 5rem;
   background: transparent;
   border: 1px solid #fff;
@@ -449,29 +449,29 @@ body main .rates .container .price-choosing .calculator .set-range__options .set
   outline: none;
 }
 
-body main .rates .container .price-choosing .calculator .set-range__options .set-button__chosen {
+main .rates .container .price-choosing .calculator .set-range__options .set-button__chosen {
   border-color: transparent;
   background: #19b5fe;
 }
 
-body main .rates .container .price-choosing .prices {
+main .rates .container .price-choosing .prices {
   margin-left: 8rem;
   text-align: center;
 }
 
-body main .rates .container .price-choosing .prices div {
+main .rates .container .price-choosing .prices div {
   margin-bottom: 1rem;
 }
 
-body main .rates .container .price-choosing .prices p {
+main .rates .container .price-choosing .prices p {
   font-size: 1.143rem;
 }
 
-body main .rates .container .price-choosing .prices strong {
+main .rates .container .price-choosing .prices strong {
   font-size: 2.286rem;
 }
 
-body main .portfolio .container .portfolio-filter {
+main .portfolio .container .portfolio-filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,7 +481,7 @@ body main .portfolio .container .portfolio-filter {
   margin-bottom: 3rem;
 }
 
-body main .portfolio .container .portfolio-filter ul {
+main .portfolio .container .portfolio-filter ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,7 +493,7 @@ body main .portfolio .container .portfolio-filter ul {
   max-height: 47px;
 }
 
-body main .portfolio .container .portfolio-filter ul li {
+main .portfolio .container .portfolio-filter ul li {
   text-transform: uppercase;
   border-right: 1px solid #19b5fe;
   padding: 1rem 3rem;
@@ -502,11 +502,11 @@ body main .portfolio .container .portfolio-filter ul li {
   max-height: 45px;
 }
 
-body main .portfolio .container .portfolio-filter ul li:last-child {
+main .portfolio .container .portfolio-filter ul li:last-child {
   border-right: none;
 }
 
-body main .portfolio .container .portfolio-filter ul .active {
+main .portfolio .container .portfolio-filter ul .active {
   text-transform: uppercase;
   border-right: 1px solid #19b5fe;
   padding: 1rem 3rem;
@@ -516,7 +516,7 @@ body main .portfolio .container .portfolio-filter ul .active {
   color: #fff;
 }
 
-body main .portfolio .container .portfolio-filter ul .active-left {
+main .portfolio .container .portfolio-filter ul .active-left {
   text-transform: uppercase;
   border-right: 1px solid #19b5fe;
   padding: 1rem 3rem;
@@ -528,7 +528,7 @@ body main .portfolio .container .portfolio-filter ul .active-left {
   border-bottom-left-radius: 20px;
 }
 
-body main .portfolio .container .portfolio-filter ul .active-right {
+main .portfolio .container .portfolio-filter ul .active-right {
   text-transform: uppercase;
   border-right: 1px solid #19b5fe;
   padding: 1rem 3rem;
@@ -540,7 +540,7 @@ body main .portfolio .container .portfolio-filter ul .active-right {
   border-bottom-right-radius: 20px;
 }
 
-body main .portfolio .container .portfolio-list {
+main .portfolio .container .portfolio-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,8 +553,60 @@ body main .portfolio .container .portfolio-list {
       align-content: flex-start;
 }
 
-body main .portfolio .container .portfolio-list__item {
+main .portfolio .container .portfolio-list__item {
   margin: 1rem 3rem;
   cursor: pointer;
+}
+
+main .services {
+  color: #464646;
+}
+
+main .services .container .services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .services .container .services-list .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 16%;
+}
+
+main .services .container .services-list .service-text {
+  text-align: left;
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+
+main .services .container .services-list .service-text h4 {
+  color: #19b5fe;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+main .services .container .services-list .service-text p {
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+main .services .container .services-list .service:nth-child(2) .service-text {
+  margin: 0 0 0 2rem;
 }
 /*# sourceMappingURL=main.css.map */
