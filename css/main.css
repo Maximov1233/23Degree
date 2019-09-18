@@ -35,6 +35,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  height: 8090rem;
 }
 
 body .container {
@@ -57,6 +58,11 @@ body .button {
   padding: 1rem 3rem;
   border-radius: 35px;
   font-family: 'Roboto Medium';
+  cursor: pointer;
+}
+
+body ul {
+  list-style: none;
 }
 
 body .section-title {
@@ -69,6 +75,12 @@ body .section-title {
   width: 25%;
   margin: auto;
   margin-bottom: 3rem;
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 body .header {
@@ -305,5 +317,244 @@ body main .services .container .services-list .service-text p {
 
 body main .services .container .services-list .service:nth-child(2) .service-text {
   margin: 0 0 0 2rem;
+}
+
+body main .rates {
+  background: url(../img/rates/bg.jpg) no-repeat center top;
+  color: #fff;
+}
+
+body main .rates .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .rates .container .section-title {
+  color: #fff;
+  border-bottom-color: #fff;
+  margin-bottom: 1rem;
+}
+
+body main .rates .container .section-subtitle {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 5rem;
+}
+
+body main .rates .container .price-choosing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .rates .container .price-choosing .calculator p {
+  font-size: 1.429rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+body main .rates .container .price-choosing .calculator .area-range,
+body main .rates .container .price-choosing .calculator .set-range {
+  border: 1px solid #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+body main .rates .container .price-choosing .calculator .area-range {
+  margin-bottom: 1rem;
+}
+
+body main .rates .container .price-choosing .calculator .area-range .labels {
+  font-size: 1.143rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .rates .container .price-choosing .calculator .area-range .labels label {
+  min-width: 93px;
+  text-align: right;
+}
+
+body main .rates .container .price-choosing .calculator .area-range .labels label:first-child, body main .rates .container .price-choosing .calculator .area-range .labels label:last-child {
+  text-align: unset;
+}
+
+body main .rates .container .price-choosing .calculator .area-range .labels label:nth-child(2) {
+  text-align: unset;
+}
+
+body main .rates .container .price-choosing .calculator .area-range .labels label:last-child {
+  text-align: right;
+}
+
+body main .rates .container .price-choosing .calculator .area-range .area-input {
+  -webkit-appearance: none;
+  width: 43rem;
+  height: 0.6rem;
+  background: #fff;
+  border-radius: 30px;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+body main .rates .container .price-choosing .calculator .area-range .area-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+body main .rates .container .price-choosing .calculator .set-range__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .rates .container .price-choosing .calculator .set-range__options .set-button {
+  padding: 1rem 5rem;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.143rem;
+  font-family: 'Roboto Medium';
+  outline: none;
+}
+
+body main .rates .container .price-choosing .calculator .set-range__options .set-button__chosen {
+  border-color: transparent;
+  background: #19b5fe;
+}
+
+body main .rates .container .price-choosing .prices {
+  margin-left: 8rem;
+  text-align: center;
+}
+
+body main .rates .container .price-choosing .prices div {
+  margin-bottom: 1rem;
+}
+
+body main .rates .container .price-choosing .prices p {
+  font-size: 1.143rem;
+}
+
+body main .rates .container .price-choosing .prices strong {
+  font-size: 2.286rem;
+}
+
+body main .portfolio .container .portfolio-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3rem;
+}
+
+body main .portfolio .container .portfolio-filter ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #19b5fe;
+  border-radius: 40px;
+  max-height: 47px;
+}
+
+body main .portfolio .container .portfolio-filter ul li {
+  text-transform: uppercase;
+  border-right: 1px solid #19b5fe;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  color: #19b5fe;
+  max-height: 45px;
+}
+
+body main .portfolio .container .portfolio-filter ul li:last-child {
+  border-right: none;
+}
+
+body main .portfolio .container .portfolio-filter ul .active {
+  text-transform: uppercase;
+  border-right: 1px solid #19b5fe;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  max-height: 45px;
+  background: #19b5fe;
+  color: #fff;
+}
+
+body main .portfolio .container .portfolio-filter ul .active-left {
+  text-transform: uppercase;
+  border-right: 1px solid #19b5fe;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  max-height: 45px;
+  background: #19b5fe;
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+body main .portfolio .container .portfolio-filter ul .active-right {
+  text-transform: uppercase;
+  border-right: 1px solid #19b5fe;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  max-height: 45px;
+  background: #19b5fe;
+  color: #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+body main .portfolio .container .portfolio-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+body main .portfolio .container .portfolio-list__item {
+  margin: 1rem 3rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

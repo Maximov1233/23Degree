@@ -60,6 +60,7 @@
         </div>
     </header>
     <main>
+
         <section class="services">
             <div class="container">
                 <div class="section-title">
@@ -89,13 +90,13 @@
                         </div>
 
                         <div class="service-text">
-                                <h4>Дизайн экстерьера</h4>
-                                <p>Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн
-                                    самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
-                            </div>
+                            <h4>Дизайн экстерьера</h4>
+                            <p>Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн
+                                самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
+                        </div>
 
                     </div>
-                    
+
                     <div class="service">
 
                         <div class="service-text">
@@ -112,7 +113,102 @@
                 </div>
             </div>
         </section>
+
+        <section class="rates">
+            <div class="container">
+                <div class="section-title">
+                    <p>Расчитать стоимость</p>
+                </div>
+                <div class="section-subtitle">
+                    <p>Расчитайте предварительную стоимость разработки интерьера</p>
+                </div>
+                <div class="price-choosing">
+                    <div class="calculator">
+                        <div class="area-range">
+                            <p>Площадь помещения:</p>
+                            <div class="labels">
+                                <label data-label="1" data-area="100">100м<sup>2</sup></label>
+                                <label data-label="2" data-area="10000">10 000м<sup>2</sup></label>
+                                <label data-label="3" data-area="250000">250 000м<sup>2</sup></label>
+                                <label data-label="4" data-area="500000">500 000м<sup>2</sup></label>
+                            </div>
+                            <input type="range" min="1" max="4" value="1" class="area-input" id="myRange">
+                        </div>
+
+                        <div class="set-range">
+                            <p>Выберите пакет:</p>
+                            <div class="set-range__options">
+                                <button class="set-button" data-percent="0.3">Light</button>
+                                <button class="set-button" data-percent="1">Medium</button>
+                                <button class="set-button" data-percent="1.5">Full</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="prices">
+                        <div class="area">
+                            <p>Площадь помещения:</p>
+                            <strong></strong>
+                        </div>
+                        <div class="average-price">
+                            <p>Средняя стоимость м<sup>2</sup>:</p>
+                            <strong data-price="300000">300 000 тг.</strong>
+                        </div>
+                        <div class="object-price">
+                            <p>Средняя стоимость объекта:</p>
+                            <strong></strong>
+                        </div>
+                        <div class="consulting">
+                            <button class="button consulting-button">Получить консультацию специалиста</button>
+                        </div>
+                        <div class="phone">
+                            <p>или позвоните нам по телефону:</p>
+                            <a href="tel:+77273887177">
+                                <strong>+ 7 727 388 71 77</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="container">
+                <div class="section-title">
+                    <p>Портфолио</p>
+                </div>
+                <div class="portfolio-filter">
+                    <ul>                                                                      
+                        <li class="active-left" data-active="1" data-project="all">все проекты</li>
+                        <li data-active="2" data-project="exterior">экстерьеры</li>
+                        <li data-active="3" data-project="residential interiors">жилые интерьеры</li>
+                        <li data-active="4" data-project="public-interiors">общественные интерьеры</li>
+                    </ul>
+                </div>
+                <div class="portfolio-list">
+                    <div class="portfolio-list__item" data-project="residential interiors">
+                        <img src="./img/portfolio/1.png" alt="">
+                    </div>
+                    <div class="portfolio-list__item" data-project="exterior">
+                        <img src="./img/portfolio/2.png" alt="">
+                    </div>
+                    <div class="portfolio-list__item" data-project="public-interiors">
+                        <img src="./img/portfolio/3.png" alt="">
+                    </div>
+                    <div class="portfolio-list__item" data-project="residential interiors">
+                        <img src="./img/portfolio/4.png" alt="">
+                    </div>
+                    <div class="portfolio-list__item" data-project="exterior">
+                        <img src="./img/portfolio/5.png" alt="">
+                    </div>
+                    <div class="portfolio-list__item" data-project="public-interiors">
+                        <img src="./img/portfolio/6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="./src/main.js"></script>
 </body>
 
 </html>
