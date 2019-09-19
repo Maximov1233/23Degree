@@ -656,4 +656,32 @@ body main .interaction .container .interaction-list .interaction-item__text {
       flex-basis: 50%;
   text-align: center;
 }
+
+body main .companies-slider .container .section-title {
+  width: 34%;
+}
+
+body main .companies-slider .container .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+  position: relative;
+  left: 0;
+}
+
+body main .companies-slider .container .slider-window {
+  min-width: 1700px;
+  overflow: hidden;
+}
+
+body main .companies-slider .container .slider-item {
+  min-width: 252px;
+}
 /*# sourceMappingURL=main.css.map */

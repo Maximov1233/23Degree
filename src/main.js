@@ -99,6 +99,13 @@ portfolioFilter.forEach((filter) => {
                 item.style.display = '';
             }
         });
-        
     });
+});
+
+const sliderInput = document.querySelector('.range-slider__range'),
+slider = document.querySelector('.slider');
+
+
+sliderInput.addEventListener('input', () => {
+    slider.style.left = `${-sliderInput.value}px`;
 });

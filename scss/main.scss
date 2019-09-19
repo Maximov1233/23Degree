@@ -575,6 +575,28 @@ body {
             }
         }
 
+        .companies-slider {
+            .container {
+                .section-title {
+                    width: 34%;
+                }
+                .slider {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 3rem;
+                    position: relative;
+                    left: 0;
+                    &-window {
+                        min-width: 1700px;
+                        overflow: hidden;
+                    }
+                    &-item {
+                        min-width: 252px;
+                    }
+                }
+            }
+        }
     }
 }
 
