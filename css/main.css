@@ -322,6 +322,7 @@ body main .services .container .services-list .service:nth-child(2) .service-tex
 body main .rates {
   background: url(../img/rates/bg.jpg) no-repeat center top;
   color: #fff;
+  padding: 5rem 0;
 }
 
 body main .rates .container {
@@ -410,11 +411,10 @@ body main .rates .container .price-choosing .calculator .area-range .labels labe
 body main .rates .container .price-choosing .calculator .area-range .area-input {
   -webkit-appearance: none;
   width: 43rem;
-  height: 0.6rem;
-  background: #fff;
+  height: 1rem;
+  background: #8f9399;
   border-radius: 30px;
   outline: none;
-  opacity: 1;
   -webkit-transition: opacity .2s;
   transition: opacity .2s;
 }
@@ -452,6 +452,41 @@ body main .rates .container .price-choosing .calculator .set-range__options .set
 body main .rates .container .price-choosing .calculator .set-range__options .set-button__chosen {
   border-color: transparent;
   background: #19b5fe;
+}
+
+body main .rates .container .price-choosing .calculator .set-range__descriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .rates .container .price-choosing .calculator .set-range__descriptions .description {
+  background: #fff;
+  color: #464646;
+  max-width: 31rem;
+  -webkit-transform: translateX(-90px);
+          transform: translateX(-90px);
+  display: none;
+}
+
+body main .rates .container .price-choosing .calculator .set-range__descriptions .description p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+body main .rates .container .price-choosing .calculator .set-range__descriptions .description:first-child {
+  -webkit-transform: translateX(-90px);
+          transform: translateX(-90px);
+}
+
+body main .rates .container .price-choosing .calculator .set-range__descriptions .description:nth-child(2) {
+  -webkit-transform: translateX(124px);
+          transform: translateX(124px);
+}
+
+body main .rates .container .price-choosing .calculator .set-range__descriptions .description:last-child {
+  -webkit-transform: translateX(335px);
+          transform: translateX(335px);
 }
 
 body main .rates .container .price-choosing .prices {
@@ -657,6 +692,10 @@ body main .interaction .container .interaction-list .interaction-item__text {
   text-align: center;
 }
 
+body main .companies-slider {
+  background: #f2f8f9;
+}
+
 body main .companies-slider .container .section-title {
   width: 34%;
 }
@@ -683,5 +722,46 @@ body main .companies-slider .container .slider-window {
 
 body main .companies-slider .container .slider-item {
   min-width: 252px;
+}
+
+body main .team .container .team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .team .container .team-list .team-member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 7rem;
+}
+
+body main .team .container .team-list .team-member strong {
+  margin: 1rem 0;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: #19b5fe;
+}
+
+body main .team .container .team-list .team-member p {
+  font-size: 1.3rem;
+  color: #464646;
+  font-weight: 300;
 }
 /*# sourceMappingURL=main.css.map */

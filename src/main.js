@@ -1,14 +1,17 @@
+// calculator
+
 const area = document.querySelector('.area strong'),
     areaInput = document.querySelector('.area-input'),
     areaLabel = document.querySelectorAll('.labels label'),
     price = document.querySelector('.object-price strong'),
     averagePrice = document.querySelector('.average-price strong'),
     setButton = document.querySelectorAll('.set-button'),
-    setButtonChosen = document.querySelector('.set-button__chosen');
+    setButtonChosen = document.querySelector('.set-button__chosen'),
+    descriptions = document.querySelectorAll('.description');
     let priceStr;
     
-
 area.innerHTML = areaLabel[0].innerHTML;
+averagePrice.innerHTML = `${reverse(averagePrice.dataset.price)} тг.`;
 price.innerHTML = `${reverse(parseFloat(areaLabel[0].textContent) * averagePrice.dataset.price)} тг.`;
 
 function reverse(number) {
@@ -24,16 +27,24 @@ function reverse(number) {
 
 setButton.forEach((button) => {
     button.addEventListener('click', () => {
-        
-        if (button.classList.contains('set-button__chosen')) {
-            button.classList.remove('set-button__chosen');
-        }
-        else {
-            for (let i = 0; i < setButton.length; i++) {
-                setButton[i].classList.remove('set-button__chosen');
+        descriptions.forEach((description) => {
+            description.style.display = 'none';
+            if (description.dataset.pos == button.dataset.pos) {
+                description.style.display = 'block';
             }
-            button.classList.toggle('set-button__chosen');
-        }
+
+
+            if (button.classList.contains('set-button__chosen')) {
+                button.classList.remove('set-button__chosen');
+            }
+            else {
+                for (let i = 0; i < setButton.length; i++) {
+                    setButton[i].classList.remove('set-button__chosen');
+                }
+                button.classList.toggle('set-button__chosen');
+            }
+        });
+        
         if (areaInput.value == 1) {
             let a = parseFloat(areaLabel[0].textContent) * averagePrice.dataset.price;
             price.innerHTML = `${reverse(a * button.dataset.percent)} тг.`;
@@ -42,6 +53,7 @@ setButton.forEach((button) => {
     });
 });
 
+// end calculator
 
 areaInput.addEventListener('input', () => {
     setButton.forEach((button) => {
@@ -71,6 +83,8 @@ areaInput.addEventListener('input', () => {
     
     
 });
+
+// portfolio
 
 const portfolioFilter = document.querySelectorAll('.portfolio-filter li'),
 portfolioItems = document.querySelectorAll('.portfolio-list__item');
@@ -102,6 +116,10 @@ portfolioFilter.forEach((filter) => {
     });
 });
 
+// end portfolio
+
+// slider
+
 const sliderInput = document.querySelector('.range-slider__range'),
 slider = document.querySelector('.slider');
 
@@ -109,3 +127,6 @@ slider = document.querySelector('.slider');
 sliderInput.addEventListener('input', () => {
     slider.style.left = `${-sliderInput.value}px`;
 });
+
+// end slider
+

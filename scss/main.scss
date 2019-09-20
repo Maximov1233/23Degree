@@ -301,7 +301,7 @@ body {
         .rates {
             background: url(../img/rates/bg.jpg) no-repeat center top;
             color: $white;
-
+            padding: 5rem 0;
             .container {
                 display: flex;
                 flex-direction: column;
@@ -370,11 +370,10 @@ body {
                             .area-input {
                                 -webkit-appearance: none;
                                 width: 43rem;
-                                height: 0.6rem;
-                                background: $white;
+                                height: 1rem;
+                                background: #8f9399;
                                 border-radius: 30px;
                                 outline: none;
-                                opacity: 1;
                                 transition: opacity .2s;
 
                                 &::-webkit-slider-thumb {
@@ -410,7 +409,29 @@ body {
                                     }
                                 }
                             }
-
+                            &__descriptions {
+                                display: flex;
+                                .description {
+                                    background: $white;
+                                    color: $text-color;
+                                    max-width: 31rem;
+                                    transform: translateX(-90px);
+                                    p {
+                                        font-size: 1rem;
+                                        text-align: center;
+                                    }
+                                    display: none;
+                                    &:first-child {
+                                        transform: translateX(-90px);
+                                    }
+                                    &:nth-child(2){
+                                        transform: translateX(124px);
+                                    }
+                                    &:last-child{
+                                        transform: translateX(335px);
+                                    }
+                                }
+                            }
                         }
                     }
 
@@ -576,6 +597,7 @@ body {
         }
 
         .companies-slider {
+            background: $advantages-bg;
             .container {
                 .section-title {
                     width: 34%;
@@ -593,6 +615,34 @@ body {
                     }
                     &-item {
                         min-width: 252px;
+                    }
+                }
+            }
+        }
+
+        .team {
+            .container {
+                .team-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .team-member {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 2rem 7rem;
+                        strong {
+                            margin: 1rem 0;
+                            font-size: 1.7rem;
+                            font-weight: 300;
+                            color: $main-color;
+                        }
+                        p {
+                            font-size: 1.3rem;
+                            color: $text-color;
+                            font-weight: 300;
+                        }
                     }
                 }
             }
