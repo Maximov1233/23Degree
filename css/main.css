@@ -764,4 +764,46 @@ body main .team .container .team-list .team-member p {
   color: #464646;
   font-weight: 300;
 }
+
+body main .quotation {
+  color: #464646;
+}
+
+body main .quotation .container .quote {
+  position: relative;
+}
+
+body main .quotation .container .quote blockquote {
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 0 5rem;
+}
+
+body main .quotation .container .quote blockquote .open-quote, body main .quotation .container .quote blockquote .close-quote {
+  position: absolute;
+}
+
+body main .quotation .container .quote blockquote .open-quote {
+  top: 0;
+  left: 0;
+}
+
+body main .quotation .container .quote blockquote .close-quote {
+  bottom: 0;
+  right: 0;
+}
+
+body main .quotation .container .quote blockquote h4 {
+  padding-top: 2rem;
+  font-weight: 500;
+}
+
+body main .quotation .container .quote blockquote strong {
+  font-weight: 500;
+}
+
+body main .quotation .container .quote blockquote p {
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
 /*# sourceMappingURL=main.css.map */

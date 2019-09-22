@@ -647,6 +647,44 @@ body {
                 }
             }
         }
+
+        .quotation {
+            color: $text-color;
+            .container {            
+                .quote {
+                    position: relative;
+                    
+                    blockquote {
+                        text-align: center;
+                        font-size: 1.7rem;
+                        padding: 0 5rem;
+                        .open-quote, .close-quote {
+                            position: absolute;
+                        }
+                        .open-quote {
+                            top: 0;
+                            left: 0;
+                        }
+                        .close-quote {
+                            bottom: 0;
+                            right: 0;
+                        }
+                        h4 {
+                            padding-top: 2rem;  
+                            font-weight: 500;
+                        }
+                        strong {
+                            font-weight: 500;
+                        }
+                        p {
+                            font-weight: 300;
+                            padding: 0.5rem 0;
+                        }
+                    }
+                }
+                
+            }
+        }
     }
 }
 
