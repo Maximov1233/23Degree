@@ -86,6 +86,24 @@ body {
         margin-bottom: 3rem;
     }
 
+    .form-input {
+        border: none;
+        padding: 1rem 7rem 1rem 2rem;
+        border-radius: 35px;
+        color: $input-color;
+        margin-bottom: 1rem;
+        font-family: 'Roboto Thin';
+        &:nth-child(2) {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+    }
+
+    .form-button {
+        display: block;
+        margin: auto;
+    }
+
     a {
         text-decoration: none;
         color: inherit;
@@ -653,7 +671,6 @@ body {
             .container {            
                 .quote {
                     position: relative;
-                    
                     blockquote {
                         text-align: center;
                         font-size: 1.7rem;
@@ -683,6 +700,89 @@ body {
                     }
                 }
                 
+            }
+        }
+
+        .blog {
+            background: $advantages-bg;
+            .container {
+                .article-list {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .article {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.3rem;
+                        a {
+                            margin-top: 2rem;
+                            max-width: 80%;
+                            text-align: center;
+                            color: $main-color;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .questions {
+            color: $white;
+            background: url(../img/questions/bg.png) no-repeat;
+            min-height: 40rem;
+            .container {
+                .section-title {
+                    color: $white;
+                    border-bottom-color: $white;
+                    margin-bottom: 2rem;
+                }
+                .section-subtitle {
+                    text-align: center;
+                    font-size: 1.7rem;
+                    font-weight: 300;
+                    margin-bottom: 3rem;
+                }
+                .info {
+                    display: flex;
+                    justify-content: center;
+                    &-form {
+                        .form-input {
+                            border-radius: 10px;
+                            padding-right: 4rem;
+                            &:last-child {
+                                display: block;
+                                min-width: 100%;
+                                padding-bottom: 100px;
+                                margin-bottom: 2rem;                              
+                            }
+                        }
+                    }
+                    &-contacts {
+                        margin-left: 5rem;
+                        ul {
+                            li {
+                                font-size: 1.2rem;
+                                font-weight: 500;
+                                margin-bottom: 1rem;
+                                display: flex;
+                                align-items: center;
+                                img {
+                                    margin-right: 0.5rem;
+                                    padding: 0.6rem;
+                                    border: 1px solid $white;
+                                    border-radius: 3px;
+                                }
+                            }
+                        }
+                        p {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
             }
         }
     }

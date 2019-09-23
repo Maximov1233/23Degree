@@ -77,6 +77,25 @@ body .section-title {
   margin-bottom: 3rem;
 }
 
+body .form-input {
+  border: none;
+  padding: 1rem 7rem 1rem 2rem;
+  border-radius: 35px;
+  color: #606060;
+  margin-bottom: 1rem;
+  font-family: 'Roboto Thin';
+}
+
+body .form-input:nth-child(2) {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+body .form-button {
+  display: block;
+  margin: auto;
+}
+
 body a {
   text-decoration: none;
   color: inherit;
@@ -805,5 +824,116 @@ body main .quotation .container .quote blockquote strong {
 body main .quotation .container .quote blockquote p {
   font-weight: 300;
   padding: 0.5rem 0;
+}
+
+body main .blog {
+  background: #f2f8f9;
+}
+
+body main .blog .container .article-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .blog .container .article-list .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3rem;
+}
+
+body main .blog .container .article-list .article a {
+  margin-top: 2rem;
+  max-width: 80%;
+  text-align: center;
+  color: #19b5fe;
+}
+
+body main .blog .container .article-list .article a:hover {
+  text-decoration: underline;
+}
+
+body main .questions {
+  color: #fff;
+  background: url(../img/questions/bg.png) no-repeat;
+  min-height: 40rem;
+}
+
+body main .questions .container .section-title {
+  color: #fff;
+  border-bottom-color: #fff;
+  margin-bottom: 2rem;
+}
+
+body main .questions .container .section-subtitle {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+body main .questions .container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .questions .container .info-form .form-input {
+  border-radius: 10px;
+  padding-right: 4rem;
+}
+
+body main .questions .container .info-form .form-input:last-child {
+  display: block;
+  min-width: 100%;
+  padding-bottom: 100px;
+  margin-bottom: 2rem;
+}
+
+body main .questions .container .info-contacts {
+  margin-left: 5rem;
+}
+
+body main .questions .container .info-contacts ul li {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .questions .container .info-contacts ul li img {
+  margin-right: 0.5rem;
+  padding: 0.6rem;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+body main .questions .container .info-contacts p {
+  font-size: 1.1rem;
 }
 /*# sourceMappingURL=main.css.map */
