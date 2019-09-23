@@ -873,7 +873,6 @@ body main .blog .container .article-list .article a:hover {
 body main .questions {
   color: #fff;
   background: url(../img/questions/bg.png) no-repeat;
-  min-height: 40rem;
 }
 
 body main .questions .container .section-title {
@@ -935,5 +934,9 @@ body main .questions .container .info-contacts ul li img {
 
 body main .questions .container .info-contacts p {
   font-size: 1.1rem;
+}
+
+body main .location {
+  padding: 0;
 }
 /*# sourceMappingURL=main.css.map */

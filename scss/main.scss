@@ -733,7 +733,6 @@ body {
         .questions {
             color: $white;
             background: url(../img/questions/bg.png) no-repeat;
-            min-height: 40rem;
             .container {
                 .section-title {
                     color: $white;
@@ -784,6 +783,10 @@ body {
                     }
                 }
             }
+        }
+
+        .location {
+            padding: 0;
         }
     }
 }
