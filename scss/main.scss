@@ -6,6 +6,7 @@ $text-color: #464646;
 $advantages-color: #3f3f3f;
 $advantages-bg: #f2f8f9;
 $section-color: #363636;
+$footer-color: #24241f;
 
 * {
     margin: 0;
@@ -44,7 +45,6 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    height: 8090rem;
 
     .container {
         width: 100%;
@@ -787,6 +787,53 @@ body {
 
         .location {
             padding: 0;
+        }
+    }
+    .footer {
+        background: $footer-color;
+        color: $white;
+        padding: 2rem 0;
+        font-size: 1.1rem;
+        font-weight: 300;
+        .useful-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5rem;
+            .site-links {
+                ul {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    div {
+                        margin-right: 3rem;
+                        li {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+                
+            }
+            .social-links {
+                .links-images {
+                    margin-top: 1rem;
+                    ul {
+                        display: flex;
+                        img {
+                            border: 1px solid $white;
+                            border-radius: 3px;
+                            padding: 0.6rem;
+                            min-height: 38px;
+                            margin-right: 0.5rem;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .policy {
+            display: flex;
+            justify-content: space-between;
         }
     }
 }

@@ -35,7 +35,6 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  height: 8090rem;
 }
 
 body .container {
@@ -938,5 +937,72 @@ body main .questions .container .info-contacts p {
 
 body main .location {
   padding: 0;
+}
+
+body .footer {
+  background: #24241f;
+  color: #fff;
+  padding: 2rem 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+body .footer .useful-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+body .footer .useful-info .site-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .footer .useful-info .site-links ul div {
+  margin-right: 3rem;
+}
+
+body .footer .useful-info .site-links ul div li {
+  margin-bottom: 1rem;
+}
+
+body .footer .useful-info .social-links .links-images {
+  margin-top: 1rem;
+}
+
+body .footer .useful-info .social-links .links-images ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .footer .useful-info .social-links .links-images ul img {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 0.6rem;
+  min-height: 38px;
+  margin-right: 0.5rem;
+}
+
+body .footer .policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */
