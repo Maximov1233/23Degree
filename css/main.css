@@ -10,25 +10,25 @@ html {
 }
 
 @media (min-width: 576px) {
-  .container {
+  body .container {
     max-width: 100%;
   }
 }
 
 @media (min-width: 768px) {
-  .container {
+  body .container {
     max-width: 100%;
   }
 }
 
 @media (min-width: 992px) {
-  .container {
+  body .container {
     max-width: 95%;
   }
 }
 
 @media (min-width: 1200px) {
-  .container {
+  body .container {
     max-width: 90%;
   }
 }
@@ -285,6 +285,10 @@ body .header .container .header-content .header-scroll {
   }
 }
 
+body main .services-tablet {
+  display: none;
+}
+
 body main .services {
   color: #464646;
 }
@@ -313,7 +317,6 @@ body main .services .container .services-list .service {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 2rem;
-  padding: 0 16%;
 }
 
 body main .services .container .services-list .service-text {
@@ -334,6 +337,57 @@ body main .services .container .services-list .service-text p {
 }
 
 body main .services .container .services-list .service:nth-child(2) .service-text {
+  margin: 0 0 0 2rem;
+}
+
+body main .services-tablet {
+  color: #464646;
+}
+
+body main .services-tablet .container .services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .services-tablet .container .services-list .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+body main .services-tablet .container .services-list .service-text {
+  text-align: left;
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+
+body main .services-tablet .container .services-list .service-text h4 {
+  color: #19b5fe;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+body main .services-tablet .container .services-list .service-text p {
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+body main .services-tablet .container .services-list .service:nth-child(2) .service-text {
   margin: 0 0 0 2rem;
 }
 
@@ -447,16 +501,7 @@ body main .rates .container .price-choosing .calculator .area-range .area-input:
   cursor: pointer;
 }
 
-body main .rates .container .price-choosing .calculator .set-range__options {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-body main .rates .container .price-choosing .calculator .set-range__options .set-button {
+body main .rates .container .price-choosing .calculator .set-button {
   padding: 1rem 5rem;
   background: transparent;
   border: 1px solid #fff;
@@ -465,11 +510,21 @@ body main .rates .container .price-choosing .calculator .set-range__options .set
   font-size: 1.143rem;
   font-family: 'Roboto Medium';
   outline: none;
+  cursor: pointer;
 }
 
-body main .rates .container .price-choosing .calculator .set-range__options .set-button__chosen {
+body main .rates .container .price-choosing .calculator .set-button__chosen {
   border-color: transparent;
   background: #19b5fe;
+}
+
+body main .rates .container .price-choosing .calculator .set-range__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body main .rates .container .price-choosing .calculator .set-range__descriptions {
@@ -507,9 +562,22 @@ body main .rates .container .price-choosing .calculator .set-range__descriptions
           transform: translateX(335px);
 }
 
+body main .rates .container .price-choosing .calculator .confirm {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body main .rates .container .price-choosing .prices {
-  margin-left: 8rem;
   text-align: center;
+  margin-left: 8rem;
 }
 
 body main .rates .container .price-choosing .prices div {
@@ -702,6 +770,54 @@ body main .interaction .container .interaction-list .interaction-item {
 }
 
 body main .interaction .container .interaction-list .interaction-item__text {
+  font-size: 2.143rem;
+  color: #464646;
+  font-weight: 300;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: center;
+}
+
+body main .interaction-tablet {
+  padding: 5rem 0;
+  display: none;
+}
+
+body main .interaction-tablet .container .section-title {
+  width: 26%;
+}
+
+body main .interaction-tablet .container .interaction-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 68%;
+  margin: auto;
+}
+
+body main .interaction-tablet .container .interaction-list .interaction-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .interaction-tablet .container .interaction-list .interaction-item__text {
   font-size: 2.143rem;
   color: #464646;
   font-weight: 300;

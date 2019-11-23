@@ -1,0 +1,226 @@
+@media (max-width: 1441px) {
+    body {
+        main {
+            .rates {
+                .container {
+                    .section-subtitle {
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+
+            .portfolio {
+                .container {
+                    .portfolio-list__item {
+                        margin: 1rem 2rem;
+                    }
+                }
+            }
+
+            .interaction {
+                .container {
+                    .interaction-list {
+                        max-width: unset;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    body {
+        main {
+            .blog {
+                .container {
+                    .article-list {
+                        display: block;
+
+                        .article {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .questions {
+                .container {
+                    .info-form {
+                        .form-input {
+                            padding-right: 0rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    body {
+        .header {
+            .form-input {
+                padding: 0;
+            }
+        }
+
+        .header {
+            padding: 0;
+
+            .container {
+                .header-top {
+                    padding-top: 1rem;
+                    margin-bottom: 0rem;
+
+                    .header-logo {
+                        flex-basis: 30%;
+                    }
+                }
+
+                .header-content {
+                    .header-title {
+                        font-size: 2.6rem;
+                        margin-bottom: 0;
+                    }
+
+                    .header-form {
+                        form {
+                            margin: 0;
+
+                            .form-input {
+                                padding: 1rem 2rem;
+                            }
+
+                        }
+                    }
+
+                    .header-policy {
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+
+        main {
+            .services {
+                display: none;
+            }
+
+            .services-tablet {
+                display: unset;
+
+                .container {
+                    .section-title {
+                        padding: 1rem 0;
+                        width: 29%;
+                    }
+
+                    .services-list {
+                        .service {
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            &-text {
+                                text-align: center;
+                                margin-bottom: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .portfolio {
+                .container {
+                    .portfolio-filter {
+                        ul {
+                            .active-left {
+                                padding: 1rem;
+                            }
+
+                            li {
+                                padding: 1rem;
+                            }
+                        }
+                    }
+
+                    .portfolio-list__item {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 1rem 0rem;
+
+                        img {
+                            max-width: 70%;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+
+            .advantages {
+                .container {
+                    .section-title {
+                        width: 46%;
+                    }
+                }
+            }
+
+            .interaction {
+                display: none;
+            }
+
+            .interaction-tablet {
+                display: block;
+
+                .container {
+                    .section-title {
+                        width: 57%;
+                    }
+
+                    .interaction-list {
+                        .interaction-item {
+                            display: block;
+                            margin: 1rem 0;
+                            .interaction-item__image {
+                                margin-bottom: 2rem;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .team {
+                .container {
+                    .team-list {
+                        .team-member {
+                            margin: 2rem 5rem;
+                        }
+                    }
+                }
+            }
+
+            .questions {
+                .container {
+                    .section-title {
+                        margin-bottom: 1rem;
+                    }
+
+                    .section-subtitle {
+                        margin-bottom: 1rem;
+                    }
+
+                    .info-contacts {
+                        p {
+                            padding: 0 0.2rem;
+                            margin: auto;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -18,8 +18,9 @@
         <div class="container">
             <div class="header-top">
                 <div class="header-logo">
-                    <img src="./img/logo.png" alt="">
-
+                    <a href="/">
+                        <img src="./img/logo.png" alt="">
+                    </a>
                 </div>
                 <div class="header-phone">
                     <img src="./img/header-phone.png" alt="">
@@ -62,7 +63,7 @@
     </header>
     <main>
 
-        <section class="services">
+         <section class="services">
             <div class="container">
                 <div class="section-title">
                     <p>Наши услуги</p>
@@ -96,6 +97,57 @@
                                 самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
                         </div>
 
+                    </div>
+
+                    <div class="service">
+
+                        <div class="service-text">
+                            <h4>Визуализация</h4>
+                            <p>Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн
+                                самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
+                        </div>
+
+                        <div class="service-image">
+                            <img src="./img/services/3.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-tablet">
+            <div class="container">
+                <div class="section-title">
+                    <p>Наши услуги</p>
+                </div>
+                <div class="services-list">
+
+                    <div class="service">
+
+                        <div class="service-text">
+                            <h4>Дизайн интерьера</h4>
+                            <p>Услуга, направленная на разработку интерьеров помещений с целью обеспечить удобство и
+                                эстетически приятное ощущение у человека при нахождении в помещении</p>
+                            <button class="button">Оставить заявку</button>
+                        </div>
+
+                        <div class="service-image">
+                            <img src="./img/services/1.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="service">
+
+                        <div class="service-text">
+                                <h4>Дизайн экстерьера</h4>
+                                <p>Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн
+                                    самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
+                            </div>
+                        <div class="service-image">
+                            <img src="./img/services/2.jpg" alt="">
+                        </div>
                     </div>
 
                     <div class="service">
@@ -168,6 +220,10 @@
                             <p>Средняя стоимость м<sup>2</sup>:</p>
                             <strong data-price="300000">тг.</strong>
                         </div>
+                        <div class="variant">
+                            <p>Выбранный пакет:</p>
+                            <strong></strong>
+                        </div>
                         <div class="object-price">
                             <p>Средняя стоимость объекта:</p>
                             <strong></strong>
@@ -181,7 +237,9 @@
                                 <strong>+ 7 727 388 71 77</strong>
                             </a>
                         </div>
+                    
                     </div>
+                   
                 </div>
             </div>
         </section>
@@ -320,7 +378,56 @@
             </div>
         </section>
 
-        <section class="companies-slider">
+        <section class="interaction-tablet">
+            <div class="container">
+                <div class="section-title">
+                    <p>Процесс взаимодействия</p>
+                </div>
+                <div class="interaction-list">
+                    <div class="interaction-item">
+                        <div class="interaction-item__image">
+                            <img src="./img/interaction/1.png" alt="">
+                        </div>
+                        <div class="interaction-item__text">
+                            <p>Заполнение брифа</p>
+                        </div>
+                    </div>
+
+                    <div class="interaction-item">
+                        <div class="interaction-item__image">
+                            <img src="./img/interaction/2.png" alt="">
+                        </div>
+
+                        <div class="interaction-item__text">
+                            <p>Исследование</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="interaction-item">
+                        <div class="interaction-item__image">
+                            <img src="./img/interaction/3.png" alt="">
+                        </div>
+                        <div class="interaction-item__text">
+                            <p>Идея</p>
+                        </div>
+                    </div>
+
+                    <div class="interaction-item">
+                            <div class="interaction-item__image">
+                                <img src="./img/interaction/4.png" alt="">
+                            </div>
+
+                        <div class="interaction-item__text">
+                            <p>Завершение</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="companies-slider">
             <div class="container">
                 <div class="section-title">
                     <p>Нам доверяют более 50 компаний</p>
@@ -376,7 +483,7 @@
                     <input class="range-slider__range" type="range" value="0" min="0" max="1750">
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="team">
             <div class="container">
@@ -511,16 +618,29 @@
                 <div class="site-links">
                     <ul>
                         <div class="li-1">
-                            <li>Главная</li>
-                            <li>Тарифы</li>
+
+                            <a href="#">
+                                <li>Главная</li>
+                            </a>
+                            <a href="#">
+                                <li>Тарифы</li>
+                            </a>
                         </div>
                         <div class="li-2">
-                            <li>Вопросы-ответы</li>
-                            <li>Личный кабинет</li>
+                            <a href="#">
+                                <li>Вопросы-ответы</li>
+                            </a>
+                            <a href="#">
+                                <li>Личный кабинет</li>
+                            </a>
                         </div>
                         <div class="li-3">
-                            <li>Новости</li>
-                            <li>Договор публичной оферты</li>
+                            <a href="#">
+                                <li>Новости</li>
+                            </a>
+                            <a href="#">
+                                <li>Договор публичной оферты</li>
+                            </a>
                         </div>
                     </ul>
                 </div>
@@ -552,11 +672,19 @@
                     <p>© Kazteleport, 2015. Все права защищены</p>
                 </div>
                 <div class="developer">
-                    <p>Создание сайта -Максим Матухно</p>
+                    <p>Создание сайта - Максим Матухно</p>
                 </div>
             </div>
         </div>
     </footer>
+
+
+    <div class="modals">
+        <div class="price-modal">
+             
+        </div>
+    </div>
+
     <script src="./src/main.js"></script>
 </body>
 

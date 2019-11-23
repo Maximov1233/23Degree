@@ -1,1 +1,134 @@
-/* No CSS *//*# sourceMappingURL=media-quires.css.map */
+@media (max-width: 1441px) {
+  body main .rates .container .section-subtitle {
+    margin-bottom: 2rem;
+  }
+  body main .portfolio .container .portfolio-list__item {
+    margin: 1rem 2rem;
+  }
+  body main .interaction .container .interaction-list {
+    max-width: unset;
+  }
+}
+
+@media (max-width: 1025px) {
+  body main .blog .container .article-list {
+    display: block;
+  }
+  body main .blog .container .article-list .article {
+    margin-bottom: 1rem;
+  }
+  body main .questions .container .info-form .form-input {
+    padding-right: 0rem;
+  }
+}
+
+@media (max-width: 769px) {
+  body .header .form-input {
+    padding: 0;
+  }
+  body .header {
+    padding: 0;
+  }
+  body .header .container .header-top {
+    padding-top: 1rem;
+    margin-bottom: 0rem;
+  }
+  body .header .container .header-top .header-logo {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  body .header .container .header-content .header-title {
+    font-size: 2.6rem;
+    margin-bottom: 0;
+  }
+  body .header .container .header-content .header-form form {
+    margin: 0;
+  }
+  body .header .container .header-content .header-form form .form-input {
+    padding: 1rem 2rem;
+  }
+  body .header .container .header-content .header-policy {
+    margin-top: 2rem;
+  }
+  body main .services {
+    display: none;
+  }
+  body main .services-tablet {
+    display: unset;
+  }
+  body main .services-tablet .container .section-title {
+    padding: 1rem 0;
+    width: 29%;
+  }
+  body main .services-tablet .container .services-list .service {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .services-tablet .container .services-list .service-text {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  body main .portfolio .container .portfolio-filter ul .active-left {
+    padding: 1rem;
+  }
+  body main .portfolio .container .portfolio-filter ul li {
+    padding: 1rem;
+  }
+  body main .portfolio .container .portfolio-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem 0rem;
+  }
+  body main .portfolio .container .portfolio-list__item img {
+    max-width: 70%;
+    margin: auto;
+  }
+  body main .advantages .container .section-title {
+    width: 46%;
+  }
+  body main .interaction {
+    display: none;
+  }
+  body main .interaction-tablet {
+    display: block;
+  }
+  body main .interaction-tablet .container .section-title {
+    width: 57%;
+  }
+  body main .interaction-tablet .container .interaction-list .interaction-item {
+    display: block;
+    margin: 1rem 0;
+  }
+  body main .interaction-tablet .container .interaction-list .interaction-item .interaction-item__image {
+    margin-bottom: 2rem;
+  }
+  body main .team .container .team-list .team-member {
+    margin: 2rem 5rem;
+  }
+  body main .questions .container .section-title {
+    margin-bottom: 1rem;
+  }
+  body main .questions .container .section-subtitle {
+    margin-bottom: 1rem;
+  }
+  body main .questions .container .info-contacts p {
+    padding: 0 0.2rem;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=media-quires.css.map */
