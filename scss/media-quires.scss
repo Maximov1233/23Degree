@@ -1,102 +1,84 @@
-@media (max-width: 1441px) {
+$white: #fff;
+$black: #000;
+$main-color: #19b5fe;
+$input-color: #606060;
+$text-color: #464646;
+$advantages-color: #3f3f3f;
+$advantages-bg: #f2f8f9;
+$section-color: #363636;
+$footer-color: #24241f;
+
+@media (max-width: 1201px) {
     body {
         main {
             .rates {
+                background: $section-color;
+
                 .container {
-                    .section-subtitle {
-                        margin-bottom: 2rem;
-                    }
-                }
-            }
+                    .price-choosing {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
 
-            .portfolio {
-                .container {
-                    .portfolio-list__item {
-                        margin: 1rem 2rem;
-                    }
-                }
-            }
+                        .calculator {
+                            margin-bottom: 20px;
+                        }
 
-            .interaction {
-                .container {
-                    .interaction-list {
-                        max-width: unset;
-                    }
-                }
-            }
-
-        }
-    }
-}
-
-@media (max-width: 1025px) {
-    body {
-        main {
-            .blog {
-                .container {
-                    .article-list {
-                        display: block;
-
-                        .article {
-                            margin-bottom: 1rem;
+                        .prices {
+                            margin: 0;
                         }
                     }
                 }
             }
 
+
+            .companies-slider {
+                .container {
+                    .slider-window {
+                        max-width: 690px;
+                    }
+                }
+            }
             .questions {
+                background: $section-color;
+    
                 .container {
-                    .info-form {
-                        .form-input {
-                            padding-right: 0rem;
+                    .info {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+    
+                        .form-button {
+                            margin-bottom: 20px;
                         }
+                    }
+    
+                    .info-contacts {
+                        margin: 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                     }
                 }
             }
-        }
+        } 
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 901px) {
     body {
-        .header {
-            .form-input {
-                padding: 0;
-            }
+        .section-title {
+            width: 90% !important;
         }
 
         .header {
-            padding: 0;
+            padding: 10px 0 2rem;
 
             .container {
                 .header-top {
-                    padding-top: 1rem;
-                    margin-bottom: 0rem;
-
-                    .header-logo {
-                        flex-basis: 30%;
-                    }
-                }
-
-                .header-content {
-                    .header-title {
-                        font-size: 2.6rem;
-                        margin-bottom: 0;
-                    }
-
-                    .header-form {
-                        form {
-                            margin: 0;
-
-                            .form-input {
-                                padding: 1rem 2rem;
-                            }
-
-                        }
-                    }
-
-                    .header-policy {
-                        margin-top: 2rem;
+                    .header-phone {
+                        display: none;
                     }
                 }
             }
@@ -104,27 +86,64 @@
 
         main {
             .services {
-                display: none;
-            }
-
-            .services-tablet {
-                display: unset;
-
                 .container {
-                    .section-title {
-                        padding: 1rem 0;
-                        width: 29%;
-                    }
-
                     .services-list {
                         .service {
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
+                            margin-bottom: 20px;
+                        }
+                        .service-text {
+                            text-align: center;
+                        }
+                        .service-image {
+                            display: none;
+                        }
+                    }
+                }
+            }   
+            .rates {
+                .container {
+                    .price-choosing {
+                        .calculator {
+                            p {
+                                font-size: 17px;
+                            }
 
-                            &-text {
-                                text-align: center;
-                                margin-bottom: 1rem;
+                            .area-range {
+                                .labels {
+                                    display: none;
+                                }
+
+                                .area-input {
+                                    display: none;
+                                }
+
+                                .area-select {
+                                    display: flex;
+                                }
+                            }
+
+                            .set-range {
+                                &__options {
+                                    .set-button {
+                                        font-size: 14px;
+                                        padding: 10px 20px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .prices {
+                            p {
+                                font-size: 18px;
+                            }
+
+                            strong {
+                                font-size: 20px;
+                            }
+
+                            .consulting-button {
+                                font-size: 14px;
+                                padding: 10px 20px;
                             }
                         }
                     }
@@ -134,93 +153,626 @@
             .portfolio {
                 .container {
                     .portfolio-filter {
+                        margin: 70px 0;
+
                         ul {
-                            .active-left {
-                                padding: 1rem;
-                            }
+                            flex-direction: column;
+                            border: none;
 
                             li {
-                                padding: 1rem;
+                                border: none;
+                                border-radius: 20px;
+
+                                &:first-child {
+                                    border: none;
+                                }
                             }
                         }
-                    }
-
-                    .portfolio-list__item {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin: 1rem 0rem;
-
-                        img {
-                            max-width: 70%;
-                            margin: auto;
-                        }
-                    }
-                }
-            }
-
-            .advantages {
-                .container {
-                    .section-title {
-                        width: 46%;
                     }
                 }
             }
 
             .interaction {
-                display: none;
-            }
-
-            .interaction-tablet {
-                display: block;
-
                 .container {
-                    .section-title {
-                        width: 57%;
-                    }
-
                     .interaction-list {
                         .interaction-item {
-                            display: block;
-                            margin: 1rem 0;
-                            .interaction-item__image {
-                                margin-bottom: 2rem;
-                            }
+                            margin-bottom: 10px;
+                        }
+                        .interaction-item__image {
+                            display: none;
                         }
                     }
+                }
+            }  
 
+            .companies-slider {
+                .container {
+                    .slider-window {
+                        max-width: 460px;
+                    }
                 }
             }
 
-            .team {
+            .blog {
                 .container {
-                    .team-list {
-                        .team-member {
-                            margin: 2rem 5rem;
+                    .article-list {
+                        flex-direction: column;
+
+                        .article {
+                            margin-bottom: 20px;
                         }
                     }
                 }
             }
 
             .questions {
+                background: $section-color;
+
                 .container {
-                    .section-title {
-                        margin-bottom: 1rem;
+                    .info-form {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        form {
+                            .inputs {
+                               flex-direction: column;
+                               .form-input {
+                                   margin-right: 0;
+                               }
+                            }
+                        }
                     }
-
-                    .section-subtitle {
-                        margin-bottom: 1rem;
-                    }
-
                     .info-contacts {
                         p {
-                            padding: 0 0.2rem;
-                            margin: auto;
+                            text-align: center;
                         }
-
                     }
                 }
             }
         }
     }
 }
+
+@media (max-width: 501px) {
+    body {
+        .section-subtitle {
+            text-align: center;
+        }
+
+        .header {
+            background: $section-color;
+
+            .container {
+                .header-content {
+                    .header-form {
+                        form {
+                            margin: 0;
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            .companies-slider {
+                .container {
+                    .slider-window {
+                        max-width: 230px;
+                    }
+                }
+            }
+        }
+        .footer {
+            .useful-info {
+                .social-links {
+                    .links-images {
+                        ul {
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            a {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }   
+    }
+}
+
+
+
+
+
+// @media (max-width: 1441px) {
+//     body {
+//         main {
+//             .rates {
+//                 .container {
+//                     .section-subtitle {
+//                         margin-bottom: 2rem;
+//                     }
+//                 }
+//             }
+
+//             .portfolio {
+//                 .container {
+//                     .portfolio-list__item {
+//                         margin: 1rem 2rem;
+//                     }
+//                 }
+//             }
+
+//             .interaction {
+//                 .container {
+//                     .interaction-list {
+//                         max-width: unset;
+//                     }
+//                 }
+//             }
+
+//         }
+//     }
+// }
+
+// @media (max-width: 1025px) {
+//     body {
+//         main {
+//             .rates {
+//                 background: $section-color;
+//                 padding: 2rem 0;
+//                 .container {
+//                     .section-title {
+//                         width: 38%;
+//                     }
+//                     .price-choosing {
+//                         flex-direction: column;
+//                         .prices {
+//                             margin-top: 1rem;
+//                             margin-left: 0;
+//                             justify-content: center;
+//                             align-items: center;
+//                             flex-direction: column;
+//                         }
+//                     }
+//                 }
+//             }
+//             .blog {
+//                 .container {
+//                     .article-list {
+//                         display: block;
+
+//                         .article {
+//                             margin-bottom: 1rem;
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .questions {
+//                 .container {
+//                     .info-form {
+//                         .form-input {
+//                             padding-right: 0rem;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 769px) {
+//     body {
+//         .header {
+//             .form-input {
+//                 padding: 0;
+//             }
+//         }
+
+//         .header {
+//             padding: 0;
+
+//             .container {
+//                 .header-top {
+//                     padding-top: 1rem;
+//                     margin-bottom: 0rem;
+
+//                     .header-logo {
+//                         flex-basis: 30%;
+//                     }
+//                 }
+
+//                 .header-content {
+//                     .header-title {
+//                         font-size: 2.6rem;
+//                         margin-bottom: 0;
+//                     }
+
+//                     .header-form {
+//                         form {
+//                             margin: 0;
+
+//                             .form-input {
+//                                 padding: 1rem 2rem;
+//                             }
+
+//                         }
+//                     }
+
+//                     .header-policy {
+//                         margin-top: 2rem;
+//                     }
+//                 }
+//             }
+//         }
+
+//         main {
+//             .services {
+//                 display: none;
+//             }
+
+//             .services-tablet {
+//                 display: unset;
+
+//                 .container {
+//                     .section-title {
+//                         padding: 1rem 0;
+//                         width: 29%;
+//                     }
+
+//                     .services-list {
+//                         .service {
+//                             flex-direction: column;
+//                             justify-content: center;
+//                             align-items: center;
+
+//                             &-text {
+//                                 text-align: center;
+//                                 margin-bottom: 1rem;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .portfolio {
+//                 .container {
+//                     .portfolio-filter {
+//                         ul {
+//                             .active-left {
+//                                 padding: 1rem;
+//                             }
+
+//                             li {
+//                                 padding: 1rem;
+//                             }
+//                         }
+//                     }
+
+//                     .portfolio-list__item {
+//                         display: flex;
+//                         justify-content: center;
+//                         align-items: center;
+//                         margin: 1rem 0rem;
+
+//                         img {
+//                             max-width: 70%;
+//                             margin: auto;
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .advantages {
+//                 .container {
+//                     .section-title {
+//                         width: 46%;
+//                     }
+//                 }
+//             }
+
+//             .interaction {
+//                 display: none;
+//             }
+
+//             .interaction-tablet {
+//                 display: block;
+
+//                 .container {
+//                     .section-title {
+//                         width: 57%;
+//                     }
+
+//                     .interaction-list {
+//                         .interaction-item {
+//                             display: block;
+//                             margin: 1rem 0;
+//                             .interaction-item__image {
+//                                 margin-bottom: 2rem;
+//                             }
+//                         }
+//                     }
+
+//                 }
+//             }
+
+//             .team {
+//                 .container {
+//                     .team-list {
+//                         .team-member {
+//                             margin: 2rem 5rem;
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .questions {
+//                 .container {
+//                     .section-title {
+//                         margin-bottom: 1rem;
+//                     }
+
+//                     .section-subtitle {
+//                         margin-bottom: 1rem;
+//                     }
+
+//                     .info-contacts {
+//                         p {
+//                             padding: 0 0.2rem;
+//                             margin: auto;
+//                         }
+
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 426px) {
+//     body {
+//         .header {
+//             .container {
+//                 .header-top {
+//                     .header-logo {
+//                         a {
+//                             img {
+//                                 width: 99%;
+//                             }
+//                         }
+//                     }     
+//                 }
+//                 .header-content {
+//                     .header-title {
+//                         font-size: 1.9rem;
+//                         margin-bottom: 1rem;
+//                     }
+
+//                 }
+//             }
+//         }
+//         main {
+//             .services-tablet {
+//                 .container {
+//                     .section-title {
+//                         width: 53%;
+//                     }
+//                     .services-list {
+//                         .service-image {
+//                             img {
+//                                 width: 99%;
+//                             }  
+//                         }
+//                     } 
+//                 }
+//             }
+//             .rates {
+//                 .container {
+//                     .section-subtitle {
+//                         text-align: center;
+//                     }
+//                     .price-choosing {
+//                         max-width: 400px;
+//                         .calculator {
+//                             .area-range {
+//                                 .labels {
+//                                     label {     
+//                                         min-width: 80px;
+//                                     }
+//                                 } 
+//                             }
+//                             .set-range {
+//                                 &__options {
+//                                     .set-button {
+//                                         padding: 1rem 2rem;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//             .portfolio {
+//                 .container {
+//                     .section-title {
+//                         width: 47%;
+//                         margin-bottom: 1rem;
+//                     }
+//                     .portfolio-filter {
+//                         margin-bottom: 9rem;
+//                         ul {
+//                             list-style-type: disc;
+//                             display: block;
+//                             border: none;
+//                             .active-left, li {
+//                                 border: none;
+//                                 border-radius: 0;
+//                             }
+//                             .active-right {
+//                                 border: none;
+//                                 border-radius: 0;
+//                             }
+//                         }
+//                     }
+//                 }                
+//             }
+
+//             .interaction-tablet {
+//                 .container {
+//                     .section-title {
+//                         width: 70%;
+//                     }
+//                     .interaction-list {
+//                         .interaction-item {
+//                             &__text {
+//                                 font-size: 1.7rem;
+//                             }
+//                             &__image {
+//                                 img {
+//                                     width: 100%;
+//                                 }
+//                             }
+//                         }
+//                     }  
+//                 }
+
+//             }
+//             .team {
+//                 .container {
+//                     .section-title {
+//                         width: 62%;
+//                     }
+//                 }
+//             }
+//             .blog {
+//                 .container {
+//                     .article-list {
+//                         .article {
+//                             img {
+//                                 width: 100%;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//             .questions {
+//                 background: $section-color;
+//                 .container {
+//                     .section-title {
+//                         width: 83%;
+//                     }
+//                     .info {
+//                         flex-direction: column;
+//                         form {
+//                             .inputs {
+//                                 .form-input {
+//                                     &:nth-child(2) {
+//                                         margin: 0;
+//                                         margin-left: 1rem;
+//                                     }
+//                                     &:nth-child(3) {
+//                                         display: block;
+//                                         margin: auto;
+//                                         margin-bottom: 1rem;
+//                                     }
+//                                 }
+//                             }
+//                             button {
+//                                 margin-bottom: 1rem;
+//                             }
+//                         }
+//                         .info-contacts {
+//                             margin-left: 2rem;
+//                         }
+//                     }
+
+//                 }
+//             }
+//         }
+//         .footer {
+//             .container {
+//                 .policy {
+//                     .developer {
+//                         text-align: center;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 376px) {
+//     body {
+//         .header {
+//             .container {
+//                 .header-top {
+//                     .header-phone {
+//                         img {
+//                             display: none;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//         main {
+//             .rates {
+//                 .container {
+//                     .section-subtitle {
+//                         text-align: center;
+//                     }
+//                     .price-choosing {
+//                         max-width: 350px;
+//                         .calculator {
+//                             .area-range {
+//                                 .labels {
+//                                     label {
+//                                         min-width: unset;
+//                                     }
+//                                 }
+//                             }
+//                             .set-range {
+//                                 &__options {
+//                                     .set-button {
+//                                         padding: 1rem 1.7rem;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//             .questions {
+//                 .container {
+//                     .info {
+//                         &-form {
+//                             form {
+//                                 .inputs {
+//                                     display: flex;
+//                                     flex-direction: column;
+//                                     justify-content: flex-start;
+//                                     align-items: flex-start;
+//                                     .form-input {
+//                                         min-width: 100%;
+//                                         &:nth-child(2) {
+//                                             margin: 0;
+//                                             margin-bottom: 1rem;
+//                                         }
+//                                         &:nth-child(3) {
+//                                             display: unset;
+//                                             margin: 0;
+//                                             margin-bottom: 1rem;
+//                                         }
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }  
+//                 }
+//             }
+//         }
+//     }
+// }

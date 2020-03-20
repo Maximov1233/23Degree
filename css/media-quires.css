@@ -1,66 +1,8 @@
-@media (max-width: 1441px) {
-  body main .rates .container .section-subtitle {
-    margin-bottom: 2rem;
+@media (max-width: 1201px) {
+  body main .rates {
+    background: #363636;
   }
-  body main .portfolio .container .portfolio-list__item {
-    margin: 1rem 2rem;
-  }
-  body main .interaction .container .interaction-list {
-    max-width: unset;
-  }
-}
-
-@media (max-width: 1025px) {
-  body main .blog .container .article-list {
-    display: block;
-  }
-  body main .blog .container .article-list .article {
-    margin-bottom: 1rem;
-  }
-  body main .questions .container .info-form .form-input {
-    padding-right: 0rem;
-  }
-}
-
-@media (max-width: 769px) {
-  body .header .form-input {
-    padding: 0;
-  }
-  body .header {
-    padding: 0;
-  }
-  body .header .container .header-top {
-    padding-top: 1rem;
-    margin-bottom: 0rem;
-  }
-  body .header .container .header-top .header-logo {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
-  }
-  body .header .container .header-content .header-title {
-    font-size: 2.6rem;
-    margin-bottom: 0;
-  }
-  body .header .container .header-content .header-form form {
-    margin: 0;
-  }
-  body .header .container .header-content .header-form form .form-input {
-    padding: 1rem 2rem;
-  }
-  body .header .container .header-content .header-policy {
-    margin-top: 2rem;
-  }
-  body main .services {
-    display: none;
-  }
-  body main .services-tablet {
-    display: unset;
-  }
-  body main .services-tablet .container .section-title {
-    padding: 1rem 0;
-    width: 29%;
-  }
-  body main .services-tablet .container .services-list .service {
+  body main .rates .container .price-choosing {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -72,17 +14,137 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  body main .services-tablet .container .services-list .service-text {
-    text-align: center;
-    margin-bottom: 1rem;
+  body main .rates .container .price-choosing .calculator {
+    margin-bottom: 20px;
   }
-  body main .portfolio .container .portfolio-filter ul .active-left {
-    padding: 1rem;
+  body main .rates .container .price-choosing .prices {
+    margin: 0;
+  }
+  body main .companies-slider .container .slider-window {
+    max-width: 690px;
+  }
+  body main .questions {
+    background: #363636;
+  }
+  body main .questions .container .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .questions .container .info .form-button {
+    margin-bottom: 20px;
+  }
+  body main .questions .container .info-contacts {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 901px) {
+  body .section-title {
+    width: 90% !important;
+  }
+  body .header {
+    padding: 10px 0 2rem;
+  }
+  body .header .container .header-top .header-phone {
+    display: none;
+  }
+  body main .services .container .services-list .service {
+    margin-bottom: 20px;
+  }
+  body main .services .container .services-list .service-text {
+    text-align: center;
+  }
+  body main .services .container .services-list .service-image {
+    display: none;
+  }
+  body main .rates .container .price-choosing .calculator p {
+    font-size: 17px;
+  }
+  body main .rates .container .price-choosing .calculator .area-range .labels {
+    display: none;
+  }
+  body main .rates .container .price-choosing .calculator .area-range .area-input {
+    display: none;
+  }
+  body main .rates .container .price-choosing .calculator .area-range .area-select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .rates .container .price-choosing .calculator .set-range__options .set-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  body main .rates .container .price-choosing .prices p {
+    font-size: 18px;
+  }
+  body main .rates .container .price-choosing .prices strong {
+    font-size: 20px;
+  }
+  body main .rates .container .price-choosing .prices .consulting-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  body main .portfolio .container .portfolio-filter {
+    margin: 70px 0;
+  }
+  body main .portfolio .container .portfolio-filter ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
   }
   body main .portfolio .container .portfolio-filter ul li {
-    padding: 1rem;
+    border: none;
+    border-radius: 20px;
   }
-  body main .portfolio .container .portfolio-list__item {
+  body main .portfolio .container .portfolio-filter ul li:first-child {
+    border: none;
+  }
+  body main .interaction .container .interaction-list .interaction-item {
+    margin-bottom: 10px;
+  }
+  body main .interaction .container .interaction-list .interaction-item__image {
+    display: none;
+  }
+  body main .companies-slider .container .slider-window {
+    max-width: 460px;
+  }
+  body main .blog .container .article-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .blog .container .article-list .article {
+    margin-bottom: 20px;
+  }
+  body main .questions {
+    background: #363636;
+  }
+  body main .questions .container .info-form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -92,43 +154,53 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 1rem 0rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  body main .portfolio .container .portfolio-list__item img {
-    max-width: 70%;
-    margin: auto;
+  body main .questions .container .info-form form .inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  body main .advantages .container .section-title {
-    width: 46%;
-  }
-  body main .interaction {
-    display: none;
-  }
-  body main .interaction-tablet {
-    display: block;
-  }
-  body main .interaction-tablet .container .section-title {
-    width: 57%;
-  }
-  body main .interaction-tablet .container .interaction-list .interaction-item {
-    display: block;
-    margin: 1rem 0;
-  }
-  body main .interaction-tablet .container .interaction-list .interaction-item .interaction-item__image {
-    margin-bottom: 2rem;
-  }
-  body main .team .container .team-list .team-member {
-    margin: 2rem 5rem;
-  }
-  body main .questions .container .section-title {
-    margin-bottom: 1rem;
-  }
-  body main .questions .container .section-subtitle {
-    margin-bottom: 1rem;
+  body main .questions .container .info-form form .inputs .form-input {
+    margin-right: 0;
   }
   body main .questions .container .info-contacts p {
-    padding: 0 0.2rem;
-    margin: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 501px) {
+  body .section-subtitle {
+    text-align: center;
+  }
+  body .header {
+    background: #363636;
+  }
+  body .header .container .header-content .header-form form {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  body main .companies-slider .container .slider-window {
+    max-width: 230px;
+  }
+  body .footer .useful-info .social-links .links-images ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .footer .useful-info .social-links .links-images ul a {
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=media-quires.css.map */

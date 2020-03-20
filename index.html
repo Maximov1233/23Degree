@@ -14,25 +14,25 @@
 </head>
 
 <body>
+
     <header class="header">
         <div class="container">
             <div class="header-top">
                 <div class="header-logo">
                     <a href="/">
-                        <img src="./img/logo.png" alt="">
+                        <img src="./img/header/logo.png" alt="">
                     </a>
                 </div>
                 <div class="header-phone">
-                    <img src="./img/header-phone.png" alt="">
+                    <img src="./img/header/smartphone.svg" alt="phone call">
                     <p>Есть вопросы? Звоните! <br>
                         <strong>8 /800/ 259 09 36</strong> </p>
                 </div>
-                <div class="header-hamburger">
+                <div class="header__hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    <p class="text">Меню</p>
                 </div>
             </div>
 
@@ -56,14 +56,15 @@
                     <p>*Мы гарантируем конфидициальность передаваемых данных</p>
                 </div>
                 <div class="header-scroll">
-                    <img src="./img/mouse.png" alt="">
+                    <img src="./img/header/mouse.png" alt="">
                 </div>
             </div>
         </div>
     </header>
+
     <main>
 
-         <section class="services">
+        <section class="services">
             <div class="container">
                 <div class="section-title">
                     <p>Наши услуги</p>
@@ -116,57 +117,6 @@
             </div>
         </section>
 
-        <section class="services-tablet">
-            <div class="container">
-                <div class="section-title">
-                    <p>Наши услуги</p>
-                </div>
-                <div class="services-list">
-
-                    <div class="service">
-
-                        <div class="service-text">
-                            <h4>Дизайн интерьера</h4>
-                            <p>Услуга, направленная на разработку интерьеров помещений с целью обеспечить удобство и
-                                эстетически приятное ощущение у человека при нахождении в помещении</p>
-                            <button class="button">Оставить заявку</button>
-                        </div>
-
-                        <div class="service-image">
-                            <img src="./img/services/1.jpg" alt="">
-                        </div>
-
-                    </div>
-
-                    <div class="service">
-
-                        <div class="service-text">
-                                <h4>Дизайн экстерьера</h4>
-                                <p>Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн
-                                    самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
-                            </div>
-                        <div class="service-image">
-                            <img src="./img/services/2.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <div class="service">
-
-                        <div class="service-text">
-                            <h4>Визуализация</h4>
-                            <p>Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн
-                                самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
-                        </div>
-
-                        <div class="service-image">
-                            <img src="./img/services/3.jpg" alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="rates">
             <div class="container">
                 <div class="section-title">
@@ -186,6 +136,17 @@
                                 <label data-label="4" data-area="500000">500 000м<sup>2</sup></label>
                             </div>
                             <input type="range" min="1" max="4" value="1" class="area-input" id="myRange">
+                            <div class="area-dropdown hide">
+                                <div class="area-selected">
+                                    100м<sup>2</sup>
+                                </div>
+                                <ul class="dropdown-content hide">
+                                    <li class="disabled dropdown-area" data-area="100">100м<sup>2</sup></li>
+                                    <li class="dropdown-area" data-area="10000">10 000м<sup>2</sup></li>
+                                    <li class="dropdown-area" data-area="250000">250 000м<sup>2</sup></li>
+                                    <li class="dropdown-area" data-area="500000">500 000м<sup>2</sup></li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div class="set-range">
@@ -237,9 +198,9 @@
                                 <strong>+ 7 727 388 71 77</strong>
                             </a>
                         </div>
-                    
+
                     </div>
-                   
+
                 </div>
             </div>
         </section>
@@ -325,7 +286,6 @@
                         <div class="advantage-image">
                             <img src="./img/advantages/6.png" alt="">
                         </div>
-
                         <p>Дарим альбом проекта, вместе с 25% скидкой на следующее обращение</p>
                     </div>
                 </div>
@@ -401,7 +361,7 @@
                         <div class="interaction-item__text">
                             <p>Исследование</p>
                         </div>
-                        
+
                     </div>
 
                     <div class="interaction-item">
@@ -414,20 +374,20 @@
                     </div>
 
                     <div class="interaction-item">
-                            <div class="interaction-item__image">
-                                <img src="./img/interaction/4.png" alt="">
-                            </div>
+                        <div class="interaction-item__image">
+                            <img src="./img/interaction/4.png" alt="">
+                        </div>
 
                         <div class="interaction-item__text">
                             <p>Завершение</p>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- <section class="companies-slider">
+        <section class="companies-slider">
             <div class="container">
                 <div class="section-title">
                     <p>Нам доверяют более 50 компаний</p>
@@ -464,26 +424,14 @@
                         <div class="slider-item">
                             <img src="./img/slider/3.png" alt="">
                         </div>
-                        <div class="slider-item">
-                            <img src="./img/slider/4.png" alt="">
-                        </div>
-                        <div class="slider-item">
-                            <img src="./img/slider/5.png" alt="">
-                        </div>
-                        <div class="slider-item">
-                            <img src="./img/slider/6.png" alt="">
-                        </div>
-                        <div class="slider-item">
-                            <img src="./img/slider/7.png" alt="">
-                        </div>
                     </div>
                 </div>
 
                 <div class="range-slider">
-                    <input class="range-slider__range" type="range" value="0" min="0" max="1750">
+                    <input class="range-slider__range" type="range" value="0" min="0" max="0">
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <section class="team">
             <div class="container">
@@ -576,7 +524,7 @@
                             <div class="inputs">
                                 <input type="text" class="form-input" placeholder="Ваше имя">
                                 <input type="text" class="form-input" placeholder="Ваш e-mail">
-                                <input type="text" class="form-input" placeholder="Ваш номер телофона">
+                                <input type="text" class="form-input" placeholder="Ваш номер телефона">
                                 <input type="text" class="form-input" placeholder="Ваше сообщение">
                             </div>
                             <button class="button form-button">Оставить заявку!</button>
@@ -584,21 +532,31 @@
                     </div>
                     <div class="info-contacts">
                         <ul>
-                            <a href="#">
-                                <li><img src="./img/questions/messangers/1.png" alt=""> + 7 896 876 66 77</li>
-                            </a>
-                            <a href="#">
-                                <li><img src="./img/questions/messangers/2.png" alt=""> + 7 896 876 66 77</li>
-                            </a>
-                            <a href="#">
-                                <li><img src="./img/questions/messangers/3.png" alt=""> sales@23degree.kz</li>
-                            </a>
-                            <a href="#">
-                                <li><img src="./img/questions/messangers/4.png" alt=""> skype: 23degree</li>
-                            </a>
-                            <a href="#">
-                                <li><img src="./img/questions/messangers/5.png" alt=""> telegram: 23degree</li>
-                            </a>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/questions/messangers/1.png" alt=""> + 7 896 876 66 77
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/questions/messangers/2.png" alt=""> + 7 896 876 66 77
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/questions/messangers/3.png" alt=""> sales@23degree.kz
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/questions/messangers/4.png" alt=""> skype: 23degree
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/questions/messangers/5.png" alt=""> telegram: 23degree
+                                </a>
+                            </li>
                         </ul>
                         <p>График работы: с 9-00 до 18-00. Пн.-Пт.</p>
                     </div>
@@ -612,6 +570,7 @@
                 width="100%" height="500" frameborder="0"></iframe>
         </section>
     </main>
+
     <footer class="footer">
         <div class="container">
             <div class="useful-info">
@@ -650,17 +609,17 @@
                         <ul>
                             <a href="#">
                                 <li>
-                                    <img src="./img/footer/1.png" alt="">
+                                    <img src="./img/footer/facebook.svg" alt="facebok">
                                 </li>
                             </a>
                             <a href="#">
                                 <li>
-                                    <img src="./img/footer/2.png" alt="">
+                                    <img src="./img/footer/instagram-sketched.svg" alt="instagram">
                                 </li>
                             </a>
                             <a href="#">
                                 <li>
-                                    <img src="./img/footer/3.png" alt="">
+                                    <img src="./img/footer/search.svg" alt="google">
                                 </li>
                             </a>
                         </ul>
@@ -681,7 +640,7 @@
 
     <div class="modals">
         <div class="price-modal">
-             
+
         </div>
     </div>
 
